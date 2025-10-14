@@ -1,0 +1,41 @@
+import { stock } from "@/data/stock";
+import GalleryViewer from "@/app/components/galleryViewer";
+import Link from "next/link";
+
+export default function AutoPage({ params }) {
+  const id = parseInt(params.id);
+  const auto = stock.find((a) => a.id === id);
+
+  if (!auto) {
+    return (
+      <main className="p-8 text-center">
+        <p className="text-red-500 font-semibold">Vehículo no encontrado.</p>
+        <Link href="/" className="text-blue-600 underline">
+          Volver al catálogo
+        </Link>
+      </main>
+    );
+  }
+
+  return (
+    <main className="max-w-4xl mx-auto py-12 px-6">
+      <Link href="/" className="text-blue-600 underline mb-4 block">
+        ← Volver al catálogo
+      </Link>
+
+      <h1 className="text-2xl font-bold mb-4">
+        {auto.marca} {auto.model} {auto.version}
+      </h1>
+
+      <p className="text-gray-700">
+        Año {auto.año} • {auto.km} km • Motor {auto.motor}
+      </p>
+
+      <p className="text-2xl font-bold text-green-700 mt-2">
+        {auto.moneda === "usd" ? "US$" : "$"} {auto.precio.toLocaleString()}
+      </p>
+
+      <GalleryViewer images={auto.imgs} />
+    </main>
+  );
+}
