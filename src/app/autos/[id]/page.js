@@ -32,8 +32,10 @@ export default function AutoPage({ params }) {
       </p>
 
       <p className="text-2xl font-bold text-green-700 mt-2">
-        {auto.moneda === "usd" ? "US$" : "$"} {auto.precio.toLocaleString()}
+        US$ {auto.precio}
       </p>
+
+      <small className="text-red-600">{!auto.disponible && "Vendido"}</small>
 
       <GalleryViewer images={auto.imgs} />
     </main>
