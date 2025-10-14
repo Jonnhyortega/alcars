@@ -11,7 +11,7 @@ export default function AutoCard({ auto }) {
         <p className="text-gray-600">{auto.año} • Motor {auto.motor}</p>
         <p className="text-gray-500">{auto.km} km</p>
         <p className="text-blue-600 font-bold mt-2">
-          {auto.moneda === "usd" ? "US$" : "$"} {auto.precio.toLocaleString()}
+          US$ {auto.precio}
         </p>
         <small className="text-red-600">{!auto.disponible && "Vendido"}</small>
 
