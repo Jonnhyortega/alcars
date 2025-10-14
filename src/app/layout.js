@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Garage de AlCras",
+  title: "Garage de AlCars",
   description: "Catalogo de vehiculos",
 };
 
