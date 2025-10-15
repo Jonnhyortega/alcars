@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function AutoCard({ auto }) {
   return (
     <Link href={`/autos/${auto.id}`}>
-      <div className="relative p-4 border rounded-xl shadow hover:shadow-lg transition-all bg-white cursor-pointer h-[150px]">
+      <div className="relative hover:shadow-2xl hover:bg-gray-400 transition-all cursor-pointer h-[150px] bg-gray-800/50 backdrop-blur-lg border border-gray-700 rounded-2xl p-4 shadow-lg">
         <h2 className="text-xl font-semibold">
           {auto.marca} {auto.model} {auto.version}
         </h2>
