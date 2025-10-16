@@ -5,12 +5,20 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export default function GalleryViewer({ images }) {
   const [index, setIndex] = useState(null);
+  const [direction, setDirection] = useState(0);
 
   const close = () => setIndex(null);
-  const next = useCallback(() => setIndex((prev) => (prev + 1) % images.length), [images]);
-  const prev = useCallback(() => setIndex((prev) => (prev - 1 + images.length) % images.length), [images]);
+  const next = useCallback(() => {
+    setDirection(1);
+    setIndex((prev) => (prev + 1) % images.length);
+  }, [images]);
 
-  // 🔹 Permite navegar con las flechas del teclado
+  const prev = useCallback(() => {
+    setDirection(-1);
+    setIndex((prev) => (prev - 1 + images.length) % images.length);
+  }, [images]);
+
+  // 🔹 Navegación por teclado
   useEffect(() => {
     if (index === null) return;
     const handleKey = (e) => {
@@ -21,6 +29,9 @@ export default function GalleryViewer({ images }) {
     window.addEventListener("keydown", handleKey);
     return () => window.removeEventListener("keydown", handleKey);
   }, [index, next, prev]);
+
+  // 🔹 Sensibilidad al arrastre (en píxeles)
+  const SWIPE_CONFIDENCE_THRESHOLD = 80;
 
   return (
     <div className="my-8">
@@ -44,7 +55,7 @@ export default function GalleryViewer({ images }) {
       </div>
 
       {/* Modal fullscreen */}
-      <AnimatePresence>
+      <AnimatePresence custom={direction}>
         {index !== null && (
           <motion.div
             className="fixed inset-0 bg-black/90 flex items-center justify-center z-50"
@@ -59,10 +70,22 @@ export default function GalleryViewer({ images }) {
               src={images[index]}
               alt={`Foto ${index + 1}`}
               className="max-h-[90vh] max-w-[90vw] rounded-lg shadow-lg object-contain select-none"
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.9, opacity: 0 }}
+              initial={{ x: direction * 100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: direction * -100, opacity: 0 }}
               transition={{ type: "spring", stiffness: 120 }}
+              drag="x"
+              dragConstraints={{ left: 0, right: 0 }}
+              dragElastic={0.7}
+              onDragEnd={(e, { offset, velocity }) => {
+                const swipe = Math.abs(offset.x) * velocity.x;
+
+                if (offset.x > SWIPE_CONFIDENCE_THRESHOLD) {
+                  prev();
+                } else if (offset.x < -SWIPE_CONFIDENCE_THRESHOLD) {
+                  next();
+                }
+              }}
               onClick={(e) => e.stopPropagation()}
             />
 
@@ -74,7 +97,7 @@ export default function GalleryViewer({ images }) {
               ✕
             </button>
 
-            {/* Flecha anterior */}
+            {/* Flechas */}
             <button
               onClick={(e) => {
                 e.stopPropagation();
@@ -84,8 +107,6 @@ export default function GalleryViewer({ images }) {
             >
               ‹
             </button>
-
-            {/* Flecha siguiente */}
             <button
               onClick={(e) => {
                 e.stopPropagation();

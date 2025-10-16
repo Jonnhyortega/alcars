@@ -1,24 +1,27 @@
+"use client"
 import { stock } from "@/data/stock";
 import GalleryViewer from "@/app/components/galleryViewer";
 import Link from "next/link";
+import { enviarWhatsApp } from "@/app/utils/redireccionarAwhatsapp";
 
-export default function AutoPage({ params }) {
-  const id = parseInt(params.id);
+
+export default async function AutoPage({ params }) {
+  const { id } = await params;
   const auto = stock.find((a) => a.id === id);
 
   if (!auto) {
     return (
-      <main className="p-8 text-center">
+      <section className="p-8 text-center">
         <p className="text-red-500 font-semibold">Vehículo no encontrado.</p>
         <Link href="/" className="text-blue-600 underline">
           Volver al catálogo
         </Link>
-      </main>
+      </section>
     );
   }
 
   return (
-    <main className="max-w-4xl mx-auto py-12 px-6">
+    <section className="max-w-4xl mx-auto py-12 px-6">
       <Link href="/" className="text-blue-600 underline mb-4 block">
         ← Volver al catálogo
       </Link>
@@ -35,9 +38,11 @@ export default function AutoPage({ params }) {
         US$ {auto.precio}
       </p>
 
+      <button className="p-4 bg-blue-600 hover:bg-blue-400 cursor-pointer rounded-md mt-2" onClick={()=>{enviarWhatsApp(auto)}}> Consultar con asesor </button>
+
       <small className="text-red-600">{!auto.disponible && "Vendido"}</small>
 
       <GalleryViewer images={auto.imgs} />
-    </main>
+    </section>
   );
 }

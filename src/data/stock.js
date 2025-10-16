@@ -1,3 +1,15 @@
+const logos = {
+    ford: "https://img.icons8.com/color/48/ford.png",
+    chevrolet: "https://img.icons8.com/plasticine/100/chevrolet.png",
+    chery:"https://car-logos.b-cdn.net/wp-content/uploads/2023/03/chery-logo-2013-present-1536x1114.webp",
+    fiat:"https://img.icons8.com/color/48/fiat.png",
+    renault: "https://img.icons8.com/color/48/renault.png",
+    bajaj:"https://1000marcas.net/wp-content/uploads/2020/10/Bajaj-logo-600x338.png",
+    peugeot:"",
+    vw:"https://img.icons8.com/color/48/volkswagen.png",
+}
+
+
 export const stock = [
     {
         id: 1,
@@ -10,6 +22,7 @@ export const stock = [
         precio: 10000,
         moneda: "usd",
         disponible: true,
+        make_logo: logos.ford,
         miniatura: "https://res.cloudinary.com/do87isqjr/image/upload/v1760408575/WhatsApp_Image_2025-10-13_at_15.43.17-removebg-preview_leher9.png",
         imgs: [
             "https://res.cloudinary.com/do87isqjr/image/upload/v1760393166/WhatsApp_Image_2025-10-13_at_15.43.17_vhz546.jpg", 
@@ -33,6 +46,7 @@ export const stock = [
         precio: 10300,
         moneda: "usd",
         disponible: true,
+        make_logo: logos.renault,
         miniatura: "https://res.cloudinary.com/do87isqjr/image/upload/v1760408622/WhatsApp_Image_2025-10-08_at_15.10.51__2_-removebg-preview_pidxxx.png",
         imgs: [
             "https://res.cloudinary.com/do87isqjr/image/upload/v1760393370/WhatsApp_Image_2025-10-08_at_15.10.51_2_c0evtq.jpg", 
@@ -59,6 +73,7 @@ export const stock = [
         precio: 10300,
         moneda: "usd",
         disponible: true,
+        make_logo: logos.chevrolet,
         miniatura: "https://res.cloudinary.com/do87isqjr/image/upload/v1760410800/WhatsApp_Image_2025-10-13_at_14.42.25-removebg-preview_1_vyzcde.png",
         imgs: [
             "https://res.cloudinary.com/do87isqjr/image/upload/v1760395672/WhatsApp_Image_2025-10-13_at_14.42.25_kyvlk8.jpg", 
@@ -89,6 +104,7 @@ export const stock = [
         precio: 15500,
         moneda: "usd",
         disponible: false,
+        make_logo: logos.fiat,
         miniatura: "https://res.cloudinary.com/do87isqjr/image/upload/v1760408761/WhatsApp_Image_2025-10-13_at_14.46.40__2_-removebg-preview_g0k2ix.png",
         imgs: [
             "https://res.cloudinary.com/do87isqjr/image/upload/v1760401939/WhatsApp_Image_2025-10-13_at_14.46.40_2_dvhlvg.jpg", 
@@ -118,6 +134,7 @@ export const stock = [
         precio: 13300,
         moneda: "usd",
         disponible: true,
+        make_logo: logos.renault,
         miniatura: "https://res.cloudinary.com/do87isqjr/image/upload/v1760408820/WhatsApp_Image_2025-10-13_at_14.51.03-removebg-preview_x2nyz4.png",
         imgs: [
             "https://res.cloudinary.com/do87isqjr/image/upload/v1760406713/WhatsApp_Image_2025-10-13_at_14.51.03_sqzhnd.jpg",    
@@ -142,6 +159,7 @@ export const stock = [
         precio: 9300,
         moneda: "usd",
         disponible: true,
+        make_logo: logos.ford,
         miniatura: "https://res.cloudinary.com/do87isqjr/image/upload/v1760408863/WhatsApp_Image_2025-10-13_at_15.42.08__3_-removebg-preview_df4hbn.png",
         imgs: [
             "https://res.cloudinary.com/do87isqjr/image/upload/v1760407494/WhatsApp_Image_2025-10-13_at_15.42.09_pvloq3.jpg",
@@ -166,6 +184,7 @@ export const stock = [
         precio: 0,
         moneda: "usd",
         disponible: false,
+        make_logo: logos.ford,
         miniatura: "https://res.cloudinary.com/do87isqjr/image/upload/v1760408921/WhatsApp_Image_2025-10-13_at_15.44.54-removebg-preview_nx4ccb.png",
         imgs: [
             "https://res.cloudinary.com/do87isqjr/image/upload/v1760407762/WhatsApp_Image_2025-10-13_at_15.44.54_s7ulb3.jpg",
@@ -192,6 +211,7 @@ export const stock = [
         precio: 3900,
         moneda: "usd",
         disponible: true,
+        make_logo: logos.bajaj,
         miniatura: "https://res.cloudinary.com/do87isqjr/image/upload/v1760411088/WhatsApp_Image_2025-10-13_at_15.45.34__2_-removebg-preview_crcr04.png",
         imgs: [
             "https://res.cloudinary.com/do87isqjr/image/upload/v1760408137/WhatsApp_Image_2025-10-13_at_15.45.34_2_wmmnzu.jpg",
@@ -214,6 +234,7 @@ export const stock = [
         precio: 11300,
         moneda: "usd",
         disponible: true,
+        make_logo: logos.fiat,
         miniatura:"https://res.cloudinary.com/do87isqjr/image/upload/v1760408476/WhatsApp_Image_2025-10-08_at_15.14.16-removebg-preview_s6ymni.png",
         imgs: [
             "https://res.cloudinary.com/do87isqjr/image/upload/v1760408362/WhatsApp_Image_2025-10-08_at_15.14.17_3_fshjwv.jpg   ",
@@ -237,6 +258,7 @@ export const stock = [
         precio: 7500,
         moneda: "usd",
         disponible: true,
+        make_logo: logos.fiat,
         miniatura:"https://res.cloudinary.com/do87isqjr/image/upload/v1760409040/WhatsApp_Image_2025-10-13_at_15.46.25__1_-removebg-preview_jxgisp.png",
         imgs: [
             "https://res.cloudinary.com/do87isqjr/image/upload/v1760409097/WhatsApp_Image_2025-10-13_at_15.46.25_1_htfqks.jpg",
@@ -261,6 +283,7 @@ export const stock = [
         precio: 9800,
         moneda: "usd",
         disponible: true,
+        make_logo: logos.chevrolet,
         miniatura:"https://res.cloudinary.com/do87isqjr/image/upload/v1760409283/WhatsApp_Image_2025-10-13_at_15.52.25__3_-removebg-preview_xyztnk.png",
         imgs: [
             "https://res.cloudinary.com/do87isqjr/image/upload/v1760409388/WhatsApp_Image_2025-10-13_at_15.52.24_4_r5hbwz.jpg",
@@ -287,19 +310,68 @@ export const stock = [
         precio: 9500,
         moneda: "usd",
         disponible: true,
+        make_logo: logos.chery,
         miniatura:"https://res.cloudinary.com/do87isqjr/image/upload/v1760409672/WhatsApp_Image_2025-10-13_at_15.57.42-removebg-preview_sbuk4s.png",
         imgs: [
             "https://res.cloudinary.com/do87isqjr/image/upload/v1760409859/WhatsApp_Image_2025-10-13_at_15.57.42_o3vuf6.jpg",
             "https://res.cloudinary.com/do87isqjr/image/upload/v1760409860/WhatsApp_Image_2025-10-13_at_15.57.43_1_fhh1sl.jpg",
             "https://res.cloudinary.com/do87isqjr/image/upload/v1760409905/WhatsApp_Image_2025-10-13_at_15.57.41_2_wlttpc.jpg",
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1760409905/WhatsApp_Image_2025-10-13_at_15.57.41_2_wlttpc.jpg",
             "https://res.cloudinary.com/do87isqjr/image/upload/v1760409907/WhatsApp_Image_2025-10-13_at_15.57.41_3_qouisi.jpg",
             "https://res.cloudinary.com/do87isqjr/image/upload/v1760409913/WhatsApp_Image_2025-10-13_at_15.57.42_1_fck1wf.jpg",
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1760409905/WhatsApp_Image_2025-10-13_at_15.57.41_2_wlttpc.jpg",
             "https://res.cloudinary.com/do87isqjr/image/upload/v1760409901/WhatsApp_Image_2025-10-13_at_15.57.40_3_wysqdn.jpg",
             "https://res.cloudinary.com/do87isqjr/image/upload/v1760409901/WhatsApp_Image_2025-10-13_at_15.57.40_cv8ooi.jpg",
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1760409878/WhatsApp_Image_2025-10-13_at_15.57.39_qyikxf.jpg",
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1760409876/WhatsApp_Image_2025-10-13_at_15.57.43_rqikjq.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1760409878/WhatsApp_Image_2025-10-13_at_15.57.39_qyikxf.jpg",    
+        ]
+    },
+    {
+        id: 13,
+        marca: "Wolksvagen",
+        model: "Gol power",
+        version: "Pack 1",
+        año: "2012",
+        motor: "2.0 Nafta",
+        km: "102.000",
+        precio: 9500,
+        moneda: "usd",
+        disponible: true,
+        make_logo: logos.vw,
+        miniatura:"https://res.cloudinary.com/do87isqjr/image/upload/v1760409672/WhatsApp_Image_2025-10-13_at_15.57.42-removebg-preview_sbuk4s.png",
+        imgs: [
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1760546676/WhatsApp_Image_2025-10-15_at_13.43.07_3_jbo5kf.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1760546676/WhatsApp_Image_2025-10-15_at_13.43.07_2_ixcvvs.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1760546676/WhatsApp_Image_2025-10-15_at_13.43.08_ndwdws.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1760546676/WhatsApp_Image_2025-10-15_at_13.43.08_ndwdws.jpg ",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1760546676/WhatsApp_Image_2025-10-15_at_13.43.08_ndwdws.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1760546677/WhatsApp_Image_2025-10-15_at_13.43.09_pfxmrz.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1760546677/WhatsApp_Image_2025-10-15_at_13.43.06_vlkoff.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1760546677/WhatsApp_Image_2025-10-15_at_13.43.09_1_cqmjyn.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1760546678/WhatsApp_Image_2025-10-15_at_13.43.07_1_epzuyn.jpg",
+    
+        ]
+    },
+    {
+        id: 14,
+        marca: "Chery",
+        model: "QQ",
+        version: "Light confort",
+        año: "2013",
+        motor: "1.1 Nafta",
+        km: "170.000",
+        precio: 6000,
+        moneda: "usd",
+        disponible: true,
+        make_logo: logos.chery,
+        miniatura:"https://res.cloudinary.com/do87isqjr/image/upload/v1760409672/WhatsApp_Image_2025-10-13_at_15.57.42-removebg-preview_sbuk4s.png",
+        imgs: [
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1760546676/WhatsApp_Image_2025-10-15_at_13.43.07_3_jbo5kf.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1760546676/WhatsApp_Image_2025-10-15_at_13.43.07_2_ixcvvs.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1760546676/WhatsApp_Image_2025-10-15_at_13.43.08_ndwdws.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1760546676/WhatsApp_Image_2025-10-15_at_13.43.08_ndwdws.jpg ",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1760546676/WhatsApp_Image_2025-10-15_at_13.43.08_ndwdws.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1760546677/WhatsApp_Image_2025-10-15_at_13.43.09_pfxmrz.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1760546677/WhatsApp_Image_2025-10-15_at_13.43.06_vlkoff.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1760546677/WhatsApp_Image_2025-10-15_at_13.43.09_1_cqmjyn.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1760546678/WhatsApp_Image_2025-10-15_at_13.43.07_1_epzuyn.jpg",
     
         ]
     },
