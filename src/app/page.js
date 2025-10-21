@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="min-h-screen font-sans bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white">
       {/* 🔹 Navbar fijo arriba */}
-      <div className="fixed top-0 left-0 w-full z-50 bg-gray-900/80 backdrop-blur-md border-b border-gray-800">
+      <div className="absolute mb-2 top-0 left-0 w-full z-50 bg-gray-900/80 backdrop-blur-md border-b border-gray-800">
         <Navbar />
       </div>
 
@@ -24,7 +24,7 @@ export default function Home() {
 
       {/* Footer opcional */}
       <footer className="text-center text-gray-400 text-sm py-8 border-t border-gray-800">
-        © {new Date().getFullYear()} Astral Vision Estudio
+        © {new Date().getFullYear()} Alcars
       </footer>
     </div>
   );
