@@ -54,7 +54,7 @@ export default function Home() {
         ) : (
           <p className="text-center text-neutral-400 text-lg mt-12">
             No se encontraron resultados para{" "}
-            <span className="text-white font-semibold">"{search}"</span>.
+            <span className="text-white font-semibold">{search}</span>.
           </p>
         )}
 
