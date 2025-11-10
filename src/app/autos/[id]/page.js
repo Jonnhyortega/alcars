@@ -47,11 +47,11 @@ export default function AutoPage({ params }) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="bg-neutral-900/80 border border-neutral-800 rounded-3xl p-8 shadow-lg backdrop-blur-sm"
+          className="g-neutral-900/80 border border-neutral-800 rounded-3xl p-8 shadow-lg backdrop-blur-sm"
         >
-          <div className="flex justify-between flex-wrap items-start gap-6">
-            <div className="space-y-3 flex-1">
-              <h1 className="text-4xl font-extrabold text-white tracking-tight">
+          <div className="flex justify-between items-center flex-wrap gap-6">
+            <div className="space-y-3 flex-1 flex flex-col justify-between items-center ">
+              <h1 className="text-4xl font-extrabold text-white tracking-tight flex flex-col justify-between items-center gap-3">
                 {auto.marca}{" "}
                 <span className="text-gray-300">{auto.model}</span>{" "}
                 <span className="text-blue-400">{auto.version}</span>
@@ -100,17 +100,8 @@ export default function AutoPage({ params }) {
         </motion.div>
 
         {/* 🖼️ Galería */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="bg-neutral-900/70 rounded-3xl border border-neutral-800 p-6 shadow-md backdrop-blur-sm"
-        >
-          <h2 className="text-xl font-semibold text-white mb-5">
-            Galería de imágenes
-          </h2>
+        
           <GalleryViewer images={auto.imgs} />
-        </motion.div>
 
         <p className="text-center text-neutral-500 text-sm mt-12">
           © {new Date().getFullYear()}{" "}

@@ -20,6 +20,7 @@ export default function GalleryViewer({ images }) {
 
   // 🔹 Navegación por teclado
   useEffect(() => {
+    
     if (index === null) return;
     const handleKey = (e) => {
       if (e.key === "Escape") close();
@@ -29,6 +30,22 @@ export default function GalleryViewer({ images }) {
     window.addEventListener("keydown", handleKey);
     return () => window.removeEventListener("keydown", handleKey);
   }, [index, next, prev]);
+
+   // 🔹 Bloquear scroll cuando se abre el visor
+   useEffect(() => {
+    if (index !== null) {
+      const scrollBarCompensation =
+        window.innerWidth - document.documentElement.clientWidth;
+
+      document.body.style.overflow = "hidden";
+      document.body.style.paddingRight = `${scrollBarCompensation}px`; // evita salto
+
+      return () => {
+        document.body.style.overflow = "";
+        document.body.style.paddingRight = "";
+      };
+    }
+  }, [index]);
 
   // 🔹 Sensibilidad al arrastre (en píxeles)
   const SWIPE_CONFIDENCE_THRESHOLD = 80;
