@@ -442,7 +442,7 @@ export const stock = [
         version: "EXE",
         año: "2013",
         motor: "2.0 Nafta/GNC",
-        km: "190.000",
+        km: "170.000",
         precio: 9000,
         moneda: "usd",
         disponible: true,

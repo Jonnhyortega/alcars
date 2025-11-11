@@ -7,7 +7,7 @@ export default function AutoCard({ auto }) {
 
   return (
     <Link href={`/autos/${auto.id}`} className="group relative">
-      <div className="h-[180px] bg-neutral-900/80 border border-neutral-800 rounded-2xl p-5 shadow-md hover:shadow-blue-500/10 hover:border-blue-500/40 transition-all duration-300 backdrop-blur-sm cursor-pointer">
+      <div className="relative h-[180px] bg-neutral-900/80 border border-neutral-800 rounded-2xl p-5 shadow-md hover:shadow hover:border-blue-500/40 transition-all duration-300 backdrop-blur-sm cursor-pointer">
         {/* Encabezado */}
         <div className="flex justify-between items-start">
           <div>
@@ -40,7 +40,7 @@ export default function AutoCard({ auto }) {
             {isSold ? "Vendido" : `US$ ${auto.precio}`}
           </p>
         </div>
-
+        <span className="absolute bottom-2.5 right-2.5 text-white font-extralight text-sm transform transition duration-100 group-hover:scale-105">🔍 Ver fotos</span>
         {/* Efecto inferior */}
         <div className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-blue-500/0 via-blue-500/60 to-blue-500/0 opacity-0 group-hover:opacity-100 transition-all duration-300" />
       </div>

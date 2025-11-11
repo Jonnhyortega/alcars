@@ -27,13 +27,13 @@ export default function Home() {
   return (
     <div className="min-h-screen font-sans bg-gradient-to-b from-black via-neutral-950 to-black text-white">
       {/* 🔹 Navbar */}
-      <div className="absolute top-0 left-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-neutral-800 shadow-md">
+      <div className="absolute top-0 left-0 w-full z-50 bg-black/80 backdrop-blur-md shadow-md">
         <Navbar />
       </div>
 
       <main className="pt-28 px-6 pb-20 max-w-7xl mx-auto space-y-10">
         {/* 🔍 Buscador */}
-        <div className="relative max-w-xl mx-auto mt-9">
+        <div className="relative max-w-xl mx-auto mt-18">
           <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-neutral-400 w-5 h-5" />
           <input
             type="text"
