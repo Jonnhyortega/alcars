@@ -24,7 +24,7 @@ export default function Navbar() {
         src="https://res.cloudinary.com/do87isqjr/image/upload/v1760550481/logo-removebg-preview_m5ji7p.png"
         alt="Logo Alcars"
         width={120}
-        className="drop-shadow-[2px_2px_15px_rgba(255,255,255)] border-1 rounded-full p-3"
+        className="drop-shadow-[2px_2px_15px_rgba(255,255,255)] border-b-zinc-600 rounded-full p-2"
       />
 
     </nav>

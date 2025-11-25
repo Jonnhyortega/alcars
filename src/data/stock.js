@@ -232,7 +232,7 @@ export const stock = [
         km: "84.000",
         precio: 11300,
         moneda: "usd",
-        disponible: true,
+        disponible: false,
         make_logo: logos.fiat,
         miniatura:"https://res.cloudinary.com/do87isqjr/image/upload/v1760408476/WhatsApp_Image_2025-10-08_at_15.14.16-removebg-preview_s6ymni.png",
         imgs: [
@@ -330,7 +330,7 @@ export const stock = [
         model: "Gol power",
         version: "Pack 1",
         año: "2012",
-        motor: "2.0 Nafta",
+        motor: "1.6 Nafta",
         km: "125.000",
         precio: 8600,
         moneda: "usd",
@@ -458,4 +458,30 @@ export const stock = [
             "https://res.cloudinary.com/do87isqjr/image/upload/v1762459756/WhatsApp_Image_2025-11-06_at_17.08.27_ccjfx1.jpg",
         ]
     },
+    {
+        id: 18,
+        marca: "Fiat",
+        model: "Siena",
+        version: "EL",
+        año: "2015",
+        motor: "1.4 Nafta/GNC",
+        km: "140.000",
+        precio: 10000,
+        moneda: "usd",
+        disponible: true,
+        make_logo: logos.fiat,
+        miniatura:"https://res.cloudinary.com/do87isqjr/image/upload/v1764113568/WhatsApp_Image_2025-11-25_at_20.25.37_iulnlf.jpg",
+        imgs: [
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1764113568/WhatsApp_Image_2025-11-25_at_20.25.37_iulnlf.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1764113567/WhatsApp_Image_2025-11-25_at_20.25.36_ooqg03.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1764113568/WhatsApp_Image_2025-11-25_at_20.25.35_2_gvlx1d.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1764113568/WhatsApp_Image_2025-11-25_at_20.25.36_1_gfx2vt.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1764113567/WhatsApp_Image_2025-11-25_at_20.25.34_okipsq.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1764113568/WhatsApp_Image_2025-11-25_at_20.25.35_1_rkg9ny.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1764113568/WhatsApp_Image_2025-11-25_at_20.25.34_1_xhtbmq.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1764113568/WhatsApp_Image_2025-11-25_at_20.25.34_2_itpiuh.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1764113568/WhatsApp_Image_2025-11-25_at_20.25.34_3_lzg8ux.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1764113569/WhatsApp_Image_2025-11-25_at_20.25.35_cglhe4.jpg",
+        ]
+    }
 ]
