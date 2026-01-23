@@ -1,11 +1,23 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-      domains: [
-        "res.cloudinary.com",
-        "img.icons8.com",
-        "car-logos.b-cdn.net",
-        "1000marcas.net"
+      remotePatterns: [
+        {
+          protocol: "https",
+          hostname: "res.cloudinary.com",
+        },
+        {
+          protocol: "https",
+          hostname: "img.icons8.com",
+        },
+        {
+          protocol: "https",
+          hostname: "car-logos.b-cdn.net",
+        },
+        {
+          protocol: "https",
+          hostname: "1000marcas.net",
+        },
       ],
     },
   };
