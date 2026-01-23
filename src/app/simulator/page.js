@@ -16,7 +16,7 @@ async function convertirUSDaARS(montoUSD, tipo = "blue") {
 }
 
 function simuladorEnPesos(carPriceARS, anticipo = 0) {
-  const margenExtra = 5_000_000;
+  const margenExtra = 10_000_000;
   const priceBase = carPriceARS + margenExtra - anticipo;
 
   const cuotasDisponibles = [60, 48, 36, 24, 12];
