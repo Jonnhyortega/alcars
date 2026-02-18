@@ -256,7 +256,7 @@ export const stock = [
         km: "85.000",
         precio: 7500,
         moneda: "usd",
-        disponible: true,
+        disponible: false,
         make_logo: logos.fiat,
         miniatura:"https://res.cloudinary.com/do87isqjr/image/upload/v1760409040/WhatsApp_Image_2025-10-13_at_15.46.25__1_-removebg-preview_jxgisp.png",
         imgs: [
