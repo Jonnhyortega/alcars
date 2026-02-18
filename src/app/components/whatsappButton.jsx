@@ -12,7 +12,7 @@ export default function WhatsAppButton() {
   // 🧠 Detectar si estamos en una página de auto (por ID en la URL)
   const match = pathname.match(/\/autos\/(\d+)/);
   const id = match ? Number(match[1]) : null;
-  const auto = id ? stock.find((a) => a.id === id) : null;
+  const auto = id ? stock.find((a) => a.id === id && a.disponible) : null;
 
   const handleClick = () => {
     if (auto) {

@@ -15,7 +15,7 @@ export default function AutoPage({ params }) {
 
   const auto = stock.find((a) => a.id === Number(id));
 
-  if (!auto) {
+  if (!auto || !auto.disponible) {
     return (
       <section className="min-h-screen flex flex-col justify-center items-center bg-background text-foreground">
         <p className="text-destructive text-xl font-semibold mb-4">

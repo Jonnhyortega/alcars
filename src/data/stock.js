@@ -21,7 +21,7 @@ export const stock = [
         km: "134.000",
         precio: 9900,
         moneda: "usd",
-        disponible: true,
+        disponible: false,
         make_logo: logos.ford,
         miniatura: "https://res.cloudinary.com/do87isqjr/image/upload/v1760408575/WhatsApp_Image_2025-10-13_at_15.43.17-removebg-preview_leher9.png",
         imgs: [
@@ -45,7 +45,7 @@ export const stock = [
         km: "170.000",
         precio: 11000,
         moneda: "usd",
-        disponible: true,
+        disponible: false,
         make_logo: logos.renault,
         miniatura: "https://res.cloudinary.com/do87isqjr/image/upload/v1760408622/WhatsApp_Image_2025-10-08_at_15.10.51__2_-removebg-preview_pidxxx.png",
         imgs: [
@@ -133,7 +133,7 @@ export const stock = [
         km: "153.000",
         precio: 13300,
         moneda: "usd",
-        disponible: true,
+        disponible: false,
         make_logo: logos.renault,
         miniatura: "https://res.cloudinary.com/do87isqjr/image/upload/v1760408820/WhatsApp_Image_2025-10-13_at_14.51.03-removebg-preview_x2nyz4.png",
         imgs: [
@@ -158,7 +158,7 @@ export const stock = [
         km: "150.000",
         precio: 9300,
         moneda: "usd",
-        disponible: true,
+        disponible: false,
         make_logo: logos.ford,
         miniatura: "https://res.cloudinary.com/do87isqjr/image/upload/v1760408863/WhatsApp_Image_2025-10-13_at_15.42.08__3_-removebg-preview_df4hbn.png",
         imgs: [
@@ -256,7 +256,7 @@ export const stock = [
         km: "85.000",
         precio: 7500,
         moneda: "usd",
-        disponible: false,
+        disponible: true,
         make_logo: logos.fiat,
         miniatura:"https://res.cloudinary.com/do87isqjr/image/upload/v1760409040/WhatsApp_Image_2025-10-13_at_15.46.25__1_-removebg-preview_jxgisp.png",
         imgs: [
@@ -283,7 +283,7 @@ export const stock = [
         km: "105.000",
         precio: 9800,
         moneda: "usd",
-        disponible: true,
+        disponible: false,
         make_logo: logos.chevrolet,
         miniatura:"https://res.cloudinary.com/do87isqjr/image/upload/v1760409283/WhatsApp_Image_2025-10-13_at_15.52.25__3_-removebg-preview_xyztnk.png",
         imgs: [
@@ -310,7 +310,7 @@ export const stock = [
         km: "102.000",
         precio: 9500,
         moneda: "usd",
-        disponible: true,
+        disponible: false,
         make_logo: logos.chery,
         miniatura:"https://res.cloudinary.com/do87isqjr/image/upload/v1760409672/WhatsApp_Image_2025-10-13_at_15.57.42-removebg-preview_sbuk4s.png",
         imgs: [
@@ -445,7 +445,7 @@ export const stock = [
         km: "170.000",
         precio: 9000,
         moneda: "usd",
-        disponible: true,
+        disponible: false,
         make_logo: logos.ford,
         miniatura:"https://res.cloudinary.com/do87isqjr/image/upload/v1760409672/WhatsApp_Image_2025-10-13_at_15.57.42-removebg-preview_sbuk4s.png",
         imgs: [
@@ -510,7 +510,7 @@ export const stock = [
            "https://res.cloudinary.com/do87isqjr/image/upload/v1769007261/WhatsApp_Image_2026-01-21_at_10.26.57_1_sk0agh.jpg",
         ]
     },
-        {
+    {
         id: 20,
         marca: "Renault",
         model: "Kwid",
@@ -534,6 +534,32 @@ export const stock = [
            "https://res.cloudinary.com/do87isqjr/image/upload/v1769133269/WhatsApp_Image_2026-01-13_at_17.29.56_2_brwlyo.jpg",
            "https://res.cloudinary.com/do87isqjr/image/upload/v1769133268/WhatsApp_Image_2026-01-13_at_17.29.55_1_z2v3nc.jpg",
            "https://res.cloudinary.com/do87isqjr/image/upload/v1769133268/WhatsApp_Image_2026-01-13_at_17.29.52_5_y2ohq9.jpg",
+        ]
+    },
+    {
+        id: 21,
+        marca: "Fiat",
+        model: "Punto",
+        version: "Elx",
+        año: "2009",
+        motor: "1.4 Nafta",
+        km: "172.000",
+        precio: 9700,
+        moneda: "usd",
+        disponible: true,
+        make_logo: logos.fiat,
+        // miniatura:"https://res.cloudinary.com/do87isqjr/image/upload/v1769133267/WhatsApp_Image_2026-01-13_at_17.29.56_4_n1ikbx.jpg",
+        imgs: [
+           "https://res.cloudinary.com/do87isqjr/image/upload/v1771368040/WhatsApp_Image_2026-02-17_at_11.57.16_1_k1uxlk.jpg",
+           "https://res.cloudinary.com/do87isqjr/image/upload/v1771368040/WhatsApp_Image_2026-02-17_at_11.57.17_2_nlxjo2.jpg",
+           "https://res.cloudinary.com/do87isqjr/image/upload/v1771368039/WhatsApp_Image_2026-02-17_at_11.57.16_qkdmnj.jpg",
+           "https://res.cloudinary.com/do87isqjr/image/upload/v1771368038/WhatsApp_Image_2026-02-17_at_11.57.17_xkpwy3.jpg",
+           "https://res.cloudinary.com/do87isqjr/image/upload/v1771368038/WhatsApp_Image_2026-02-17_at_11.57.18_2_pgqctl.jpg",
+           "https://res.cloudinary.com/do87isqjr/image/upload/v1771368038/WhatsApp_Image_2026-02-17_at_11.57.18_3_xqykcz.jpg",
+           "https://res.cloudinary.com/do87isqjr/image/upload/v1771368038/WhatsApp_Image_2026-02-17_at_11.57.17_1_wy36bx.jpg",
+           "https://res.cloudinary.com/do87isqjr/image/upload/v1771368037/WhatsApp_Image_2026-02-17_at_11.57.18_yyhyem.jpg",
+           "https://res.cloudinary.com/do87isqjr/image/upload/v1771368037/WhatsApp_Image_2026-02-17_at_11.57.17_3_zs2718.jpg",
+
         ]
     },
 ]

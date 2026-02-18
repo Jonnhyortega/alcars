@@ -32,6 +32,7 @@ export default function Home() {
   }, []);
 
   const filteredStock = stock.filter((auto) => {
+    if (!auto.disponible) return false;
     const text = search.toLowerCase();
     return (
       auto.marca?.toLowerCase().includes(text) ||
