@@ -9,9 +9,8 @@ const logos = {
     vw:"https://img.icons8.com/color/48/volkswagen.png",
 }
 
-
-export const stock = [
-    {
+const oldStock = [
+     {
         id: 1,
         marca: "Ford",
         model: "Fiesta",
@@ -199,30 +198,6 @@ export const stock = [
         ]
     },
     {
-        id: 8,
-        moto: true,
-        marca: "Bajaj",
-        model: "Rousser",
-        version: "NS 200",
-        año: "2023",
-        motor: "Nafta",
-        km: "8.000",
-        precio: 3900,
-        moneda: "usd",
-        disponible: true,
-        make_logo: logos.bajaj,
-        miniatura: "https://res.cloudinary.com/do87isqjr/image/upload/v1760411088/WhatsApp_Image_2025-10-13_at_15.45.34__2_-removebg-preview_crcr04.png",
-        imgs: [
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1760408137/WhatsApp_Image_2025-10-13_at_15.45.34_2_wmmnzu.jpg",
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1760408137/WhatsApp_Image_2025-10-13_at_15.45.34_przorx.jpg",
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1760408137/WhatsApp_Image_2025-10-13_at_15.45.34_1_d3tksw.jpg",
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1760408138/WhatsApp_Image_2025-10-13_at_15.45.33_2_yxexqw.jpg",
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1760408138/WhatsApp_Image_2025-10-13_at_15.45.33_zio9v2.jpg",
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1760408138/WhatsApp_Image_2025-10-13_at_15.45.33_1_mqeeqt.jpg",
-            "",
-        ]
-    },
-    {
         id: 9,
         marca: "Fiat",
         model: "Siena",
@@ -325,61 +300,6 @@ export const stock = [
         ]
     },
     {
-        id: 13,
-        marca: "Volkswagen",
-        model: "Gol power",
-        version: "Pack 1",
-        año: "2012",
-        motor: "1.6 Nafta",
-        km: "125.000",
-        precio: 8600,
-        moneda: "usd",
-        disponible: true,
-        make_logo: logos.vw,
-        miniatura:"https://res.cloudinary.com/do87isqjr/image/upload/v1760409672/WhatsApp_Image_2025-10-13_at_15.57.42-removebg-preview_sbuk4s.png",
-        imgs: [
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1760546676/WhatsApp_Image_2025-10-15_at_13.43.07_3_jbo5kf.jpg",
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1760546676/WhatsApp_Image_2025-10-15_at_13.43.07_2_ixcvvs.jpg",
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1760546676/WhatsApp_Image_2025-10-15_at_13.43.08_ndwdws.jpg",
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1760546676/WhatsApp_Image_2025-10-15_at_13.43.08_ndwdws.jpg ",
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1760546676/WhatsApp_Image_2025-10-15_at_13.43.08_ndwdws.jpg",
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1760546677/WhatsApp_Image_2025-10-15_at_13.43.09_pfxmrz.jpg",
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1760546677/WhatsApp_Image_2025-10-15_at_13.43.06_vlkoff.jpg",
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1760546677/WhatsApp_Image_2025-10-15_at_13.43.09_1_cqmjyn.jpg",
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1760546678/WhatsApp_Image_2025-10-15_at_13.43.07_1_epzuyn.jpg",
-    
-        ]
-    },
-    {
-        id: 14,
-        marca: "Chery",
-        model: "QQ",
-        version: "Light confort",
-        año: "2013",
-        motor: "1.1 Nafta",
-        km: "170.000",
-        precio: 6000,
-        moneda: "usd",
-        disponible: true,
-        make_logo: logos.chery,
-        miniatura:"https://res.cloudinary.com/do87isqjr/image/upload/v1760409672/WhatsApp_Image_2025-10-13_at_15.57.42-removebg-preview_sbuk4s.png",
-        imgs: [
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1762292389/WhatsApp_Image_2025-11-04_at_18.38.40_2_mjobvh.jpg",
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1762292387/WhatsApp_Image_2025-11-04_at_18.38.41_2_wypesx.jpg",
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1762292387/WhatsApp_Image_2025-11-04_at_18.38.41_1_zuytux.jpg",
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1762292387/WhatsApp_Image_2025-11-04_at_18.38.41_3_wedtta.jpg",
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1762292387/WhatsApp_Image_2025-11-04_at_18.38.42_hjmdb1.jpg",
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1762292387/WhatsApp_Image_2025-11-04_at_18.38.40_1_i8jkoq.jpg",
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1762292388/WhatsApp_Image_2025-11-04_at_18.38.40_e2sqa1.jpg",
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1762292388/WhatsApp_Image_2025-11-04_at_18.38.40_3_rqybma.jpg",
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1762292388/WhatsApp_Image_2025-11-04_at_18.38.41_dpotz7.jpg",
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1762292388/WhatsApp_Image_2025-11-04_at_18.38.39_2_koxvia.jpg",
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1762292389/WhatsApp_Image_2025-11-04_at_18.38.39_1_fyvqhh.jpg",
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1762292389/WhatsApp_Image_2025-11-04_at_18.38.39_qgz9zi.jpg",
-    
-        ]
-    },
-    {
         id: 15,
         marca: "Volkswagen",
         model: "Gol Trend",
@@ -389,7 +309,7 @@ export const stock = [
         km: "130.000",
         precio: 8620,
         moneda: "usd",
-        disponible: true,
+        disponible: false,
         make_logo: logos.vw,
         miniatura:"https://res.cloudinary.com/do87isqjr/image/upload/v1760409672/WhatsApp_Image_2025-10-13_at_15.57.42-removebg-preview_sbuk4s.png",
         imgs: [
@@ -403,36 +323,6 @@ export const stock = [
             "https://res.cloudinary.com/do87isqjr/image/upload/v1760988171/WhatsApp_Image_2025-10-20_at_16.08.15_3_iqzfiz.jpg",
             "https://res.cloudinary.com/do87isqjr/image/upload/v1760988171/WhatsApp_Image_2025-10-20_at_16.08.15_2_x9ldjd.jpg",
             "https://res.cloudinary.com/do87isqjr/image/upload/v1760988170/WhatsApp_Image_2025-10-20_at_16.08.16_3_iizdao.jpg",
-        ]
-    },
-    {
-        id: 16,
-        marca: "Volkswagen",
-        model: "Gol trend",
-        version: "MSI",
-        año: "2013",
-        motor: "1.6 Nafta",
-        km: "220.000",
-        precio: 10000,
-        moneda: "usd",
-        disponible: true,
-        make_logo: logos.vw,
-        miniatura:"https://res.cloudinary.com/do87isqjr/image/upload/v1760409672/WhatsApp_Image_2025-10-13_at_15.57.42-removebg-preview_sbuk4s.png",
-        imgs: [
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1762272294/WhatsApp_Image_2025-10-29_at_14.04.09_1_q0cy9n.jpg",
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1762272291/WhatsApp_Image_2025-10-29_at_14.04.09_2_obq5jo.jpg",
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1762272291/WhatsApp_Image_2025-10-29_at_14.04.09_2_obq5jo.jpg",
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1762272291/WhatsApp_Image_2025-10-29_at_14.04.07_nattz1.jpg",
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1762272291/WhatsApp_Image_2025-10-29_at_14.04.13_3_zay1hk.jpg",
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1762272292/WhatsApp_Image_2025-10-29_at_14.04.10_2_zg6maf.jpg",
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1762272292/WhatsApp_Image_2025-10-29_at_14.04.08_1_heel4e.jpg",
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1762272293/WhatsApp_Image_2025-10-29_at_14.04.11_sjqxnm.jpg",
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1762272293/WhatsApp_Image_2025-10-29_at_14.04.12_erkg7j.jpg",
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1762272293/WhatsApp_Image_2025-10-29_at_14.04.11_2_agdmza.jpg",
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1762272294/WhatsApp_Image_2025-10-29_at_14.04.12_1_tm8vt8.jpg",
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1762272294/WhatsApp_Image_2025-10-29_at_14.04.13_dyydcu.jpg",
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1762272295/WhatsApp_Image_2025-10-29_at_14.04.13_1_rpcm2i.jpg",
-            "https://res.cloudinary.com/do87isqjr/image/upload/v1762272295/WhatsApp_Image_2025-10-29_at_14.04.09_nkmv2q.jpg",
         ]
     },
     {
@@ -468,7 +358,7 @@ export const stock = [
         km: "140.000",
         precio: 10000,
         moneda: "usd",
-        disponible: true,
+        disponible: false,
         make_logo: logos.fiat,
         miniatura:"https://res.cloudinary.com/do87isqjr/image/upload/v1764113568/WhatsApp_Image_2025-11-25_at_20.25.37_iulnlf.jpg",
         imgs: [
@@ -483,7 +373,7 @@ export const stock = [
             "https://res.cloudinary.com/do87isqjr/image/upload/v1764113568/WhatsApp_Image_2025-11-25_at_20.25.34_3_lzg8ux.jpg",
             "https://res.cloudinary.com/do87isqjr/image/upload/v1764113569/WhatsApp_Image_2025-11-25_at_20.25.35_cglhe4.jpg",
         ]
-    },
+    },    
     {
         id: 19,
         marca: "Volkswagen",
@@ -494,7 +384,7 @@ export const stock = [
         km: "57.000",
         precio: 12900,
         moneda: "usd",
-        disponible: true,
+        disponible: false,
         make_logo: logos.vw,
         miniatura:"https://res.cloudinary.com/do87isqjr/image/upload/v1769007261/WhatsApp_Image_2026-01-21_at_10.26.59_kujt2k.jpg",
         imgs: [
@@ -511,32 +401,6 @@ export const stock = [
         ]
     },
     {
-        id: 20,
-        marca: "Renault",
-        model: "Kwid",
-        version: "",
-        año: "2020",
-        motor: "1.0 Nafta",
-        km: "101.000",
-        precio: 9700,
-        moneda: "usd",
-        disponible: true,
-        make_logo: logos.renault,
-        miniatura:"https://res.cloudinary.com/do87isqjr/image/upload/v1769133267/WhatsApp_Image_2026-01-13_at_17.29.56_4_n1ikbx.jpg",
-        imgs: [
-           "https://res.cloudinary.com/do87isqjr/image/upload/v1769133267/WhatsApp_Image_2026-01-13_at_17.29.56_4_n1ikbx.jpg",
-           "https://res.cloudinary.com/do87isqjr/image/upload/v1769133267/WhatsApp_Image_2026-01-13_at_17.29.52_4_kf0fkl.jpg",
-           "https://res.cloudinary.com/do87isqjr/image/upload/v1769133268/WhatsApp_Image_2026-01-13_at_17.29.52_6_uvlqgb.jpg",
-           "https://res.cloudinary.com/do87isqjr/image/upload/v1769133267/WhatsApp_Image_2026-01-13_at_17.29.51_iin5sa.jpg",
-           "https://res.cloudinary.com/do87isqjr/image/upload/v1769133268/WhatsApp_Image_2026-01-13_at_17.29.53_1_tohpvh.jpg",
-           "https://res.cloudinary.com/do87isqjr/image/upload/v1769133268/WhatsApp_Image_2026-01-13_at_17.29.53_2_f9mtee.jpg",
-           "https://res.cloudinary.com/do87isqjr/image/upload/v1769133268/WhatsApp_Image_2026-01-13_at_17.29.56_3_cdicwj.jpg",
-           "https://res.cloudinary.com/do87isqjr/image/upload/v1769133269/WhatsApp_Image_2026-01-13_at_17.29.56_2_brwlyo.jpg",
-           "https://res.cloudinary.com/do87isqjr/image/upload/v1769133268/WhatsApp_Image_2026-01-13_at_17.29.55_1_z2v3nc.jpg",
-           "https://res.cloudinary.com/do87isqjr/image/upload/v1769133268/WhatsApp_Image_2026-01-13_at_17.29.52_5_y2ohq9.jpg",
-        ]
-    },
-    {
         id: 21,
         marca: "Fiat",
         model: "Punto",
@@ -546,7 +410,7 @@ export const stock = [
         km: "172.000",
         precio: 9700,
         moneda: "usd",
-        disponible: true,
+        disponible: false,
         make_logo: logos.fiat,
         // miniatura:"https://res.cloudinary.com/do87isqjr/image/upload/v1769133267/WhatsApp_Image_2026-01-13_at_17.29.56_4_n1ikbx.jpg",
         imgs: [
@@ -561,5 +425,152 @@ export const stock = [
            "https://res.cloudinary.com/do87isqjr/image/upload/v1771368037/WhatsApp_Image_2026-02-17_at_11.57.17_3_zs2718.jpg",
 
         ]
+    }
+]
+
+export const stock = [
+    {
+        id: 1,
+        moto: true,
+        marca: "Bajaj",
+        model: "Rousser",
+        version: "NS 200",
+        año: "2023",
+        motor: "Nafta",
+        km: "13.500",
+        precio: 3900,
+        moneda: "usd",
+        disponible: true,
+        make_logo: logos.bajaj,
+        miniatura: "https://res.cloudinary.com/do87isqjr/image/upload/v1779200595/WhatsApp_Image_2026-05-19_at_11.07.59_1_udfims.jpg",
+        imgs: [
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1779200595/WhatsApp_Image_2026-05-19_at_11.07.59_1_udfims.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1779200595/WhatsApp_Image_2026-05-19_at_11.07.59_bwkzux.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1779200594/WhatsApp_Image_2026-05-19_at_11.08.00_dr8z07.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1779200594/WhatsApp_Image_2026-05-19_at_11.08.01_b79elb.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1779200594/WhatsApp_Image_2026-05-19_at_11.08.00_1_w6m9xf.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1779200594/WhatsApp_Image_2026-05-19_at_11.08.00_2_hrb9ae.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1779200594/WhatsApp_Image_2026-05-19_at_11.08.01_1_jextju.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1779200593/WhatsApp_Image_2026-05-19_at_11.08.02_1_ihol3m.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1779200594/WhatsApp_Image_2026-05-19_at_11.08.01_2_tvlnvb.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1779200593/WhatsApp_Image_2026-05-19_at_11.08.02_oppp3z.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1779200593/WhatsApp_Image_2026-05-19_at_11.08.01_3_jjar2y.jpg",
+        ]
     },
+    {
+        id: 2,
+        marca: "Volkswagen",
+        model: "Gol power",
+        version: "Pack 1",
+        año: "2012",
+        motor: "1.6 Nafta",
+        km: "125.000",
+        precio: 8600,
+        moneda: "usd",
+        disponible: true,
+        make_logo: logos.vw,
+        miniatura:"https://res.cloudinary.com/do87isqjr/image/upload/v1760409672/WhatsApp_Image_2025-10-13_at_15.57.42-removebg-preview_sbuk4s.png",
+        imgs: [
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1760546676/WhatsApp_Image_2025-10-15_at_13.43.07_3_jbo5kf.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1760546676/WhatsApp_Image_2025-10-15_at_13.43.07_2_ixcvvs.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1760546676/WhatsApp_Image_2025-10-15_at_13.43.08_ndwdws.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1760546676/WhatsApp_Image_2025-10-15_at_13.43.08_ndwdws.jpg ",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1760546676/WhatsApp_Image_2025-10-15_at_13.43.08_ndwdws.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1760546677/WhatsApp_Image_2025-10-15_at_13.43.09_pfxmrz.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1760546677/WhatsApp_Image_2025-10-15_at_13.43.06_vlkoff.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1760546677/WhatsApp_Image_2025-10-15_at_13.43.09_1_cqmjyn.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1760546678/WhatsApp_Image_2025-10-15_at_13.43.07_1_epzuyn.jpg",
+    
+        ]
+    },
+    {
+        id: 3,
+        marca: "Chery",
+        model: "QQ",
+        version: "Light confort",
+        año: "2013",
+        motor: "1.1 Nafta",
+        km: "170.000",
+        precio: 6000,
+        moneda: "usd",
+        disponible: true,
+        make_logo: logos.chery,
+        miniatura:"https://res.cloudinary.com/do87isqjr/image/upload/v1760409672/WhatsApp_Image_2025-10-13_at_15.57.42-removebg-preview_sbuk4s.png",
+        imgs: [
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1762292389/WhatsApp_Image_2025-11-04_at_18.38.40_2_mjobvh.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1762292387/WhatsApp_Image_2025-11-04_at_18.38.41_2_wypesx.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1762292387/WhatsApp_Image_2025-11-04_at_18.38.41_1_zuytux.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1762292387/WhatsApp_Image_2025-11-04_at_18.38.41_3_wedtta.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1762292387/WhatsApp_Image_2025-11-04_at_18.38.42_hjmdb1.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1762292387/WhatsApp_Image_2025-11-04_at_18.38.40_1_i8jkoq.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1762292388/WhatsApp_Image_2025-11-04_at_18.38.40_e2sqa1.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1762292388/WhatsApp_Image_2025-11-04_at_18.38.40_3_rqybma.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1762292388/WhatsApp_Image_2025-11-04_at_18.38.41_dpotz7.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1762292388/WhatsApp_Image_2025-11-04_at_18.38.39_2_koxvia.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1762292389/WhatsApp_Image_2025-11-04_at_18.38.39_1_fyvqhh.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1762292389/WhatsApp_Image_2025-11-04_at_18.38.39_qgz9zi.jpg",
+    
+        ]
+    },   
+    {
+        id: 4,
+        marca: "Volkswagen",
+        model: "Gol trend",
+        version: "MSI",
+        año: "2013",
+        motor: "1.6 Nafta",
+        km: "220.000",
+        precio: 10000,
+        moneda: "usd",
+        disponible: true,
+        make_logo: logos.vw,
+        miniatura:"https://res.cloudinary.com/do87isqjr/image/upload/v1760409672/WhatsApp_Image_2025-10-13_at_15.57.42-removebg-preview_sbuk4s.png",
+        imgs: [
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1762272294/WhatsApp_Image_2025-10-29_at_14.04.09_1_q0cy9n.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1762272291/WhatsApp_Image_2025-10-29_at_14.04.09_2_obq5jo.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1762272291/WhatsApp_Image_2025-10-29_at_14.04.09_2_obq5jo.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1762272291/WhatsApp_Image_2025-10-29_at_14.04.07_nattz1.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1762272291/WhatsApp_Image_2025-10-29_at_14.04.13_3_zay1hk.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1762272292/WhatsApp_Image_2025-10-29_at_14.04.10_2_zg6maf.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1762272292/WhatsApp_Image_2025-10-29_at_14.04.08_1_heel4e.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1762272293/WhatsApp_Image_2025-10-29_at_14.04.11_sjqxnm.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1762272293/WhatsApp_Image_2025-10-29_at_14.04.12_erkg7j.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1762272293/WhatsApp_Image_2025-10-29_at_14.04.11_2_agdmza.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1762272294/WhatsApp_Image_2025-10-29_at_14.04.12_1_tm8vt8.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1762272294/WhatsApp_Image_2025-10-29_at_14.04.13_dyydcu.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1762272295/WhatsApp_Image_2025-10-29_at_14.04.13_1_rpcm2i.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1762272295/WhatsApp_Image_2025-10-29_at_14.04.09_nkmv2q.jpg",
+        ]
+    },
+    {
+        id: 5,
+        marca: "Ford",
+        model: "Fiesta",
+        version: "SE PLUS",
+        año: "2016",
+        motor: "1.6 Nafta",
+        km: "148.000",
+        precio: 8000,
+        moneda: "usd",
+        disponible: true,
+        make_logo: logos.ford,
+        miniatura:"https://res.cloudinary.com/do87isqjr/image/upload/v1779200384/WhatsApp_Image_2026-05-15_at_19.23.10_1_bhleyb.jpg",
+        imgs: [
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1779200384/WhatsApp_Image_2026-05-15_at_19.23.10_1_bhleyb.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1779200385/WhatsApp_Image_2026-05-15_at_19.23.10_e27ksl.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1779200384/WhatsApp_Image_2026-05-15_at_19.23.11_1_egeuom.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1779200384/WhatsApp_Image_2026-05-15_at_19.23.13_dydnf0.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1779200384/WhatsApp_Image_2026-05-15_at_19.23.12_1_ys1n1h.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1779200384/WhatsApp_Image_2026-05-15_at_19.23.12_fnfscq.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1779200384/WhatsApp_Image_2026-05-15_at_19.23.11_dlzy0v.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1779200383/WhatsApp_Image_2026-05-15_at_19.23.09_yyabrr.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1779200383/WhatsApp_Image_2026-05-15_at_19.23.08_v5db4f.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1779200383/WhatsApp_Image_2026-05-15_at_19.23.13_1_v1ga7p.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1779200383/WhatsApp_Image_2026-05-15_at_19.23.13_1_v1ga7p.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1779200383/WhatsApp_Image_2026-05-15_at_19.23.15_kzjkbp.jpg",
+            "https://res.cloudinary.com/do87isqjr/image/upload/v1779200383/WhatsApp_Image_2026-05-15_at_19.23.14_vf9ck0.jpg",
+        ]
+    },
+
+
 ]
