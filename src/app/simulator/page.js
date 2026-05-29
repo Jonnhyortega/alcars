@@ -2,18 +2,6 @@
 
 import { useState } from "react";
 
-async function obtenerCotizacion(tipo = "blue") {
-  const resp = await fetch("https://dolarapi.com/v1/dolares");
-  const data = await resp.json();
-  const dolar = data.find((d) => d.casa === tipo);
-  if (!dolar) throw new Error(`No se encontró la cotización para el tipo '${tipo}'.`);
-  return parseFloat(dolar.venta);
-}
-
-async function convertirUSDaARS(montoUSD, tipo = "blue") {
-  const tasa = await obtenerCotizacion(tipo);
-  return montoUSD * tasa;
-}
 
 function simuladorEnPesos(carPriceARS, anticipo = 0) {
   const margenExtra = 10_000_000;
@@ -52,13 +40,11 @@ function mostrarFechaHoraArgentina() {
   return new Date().toLocaleString("es-AR", opciones);
 }
 
-async function ejecutarSimulador(precioUSD, anticipo = 0) {
-  const precioARS = await convertirUSDaARS(precioUSD, "blue");
+async function ejecutarSimulador(precioARS, anticipo = 0) {
   const opciones = simuladorEnPesos(precioARS, anticipo);
   const fecha = mostrarFechaHoraArgentina();
 
   return {
-    precioUSD,
     precioARS,
     anticipo,
     opciones,
@@ -67,7 +53,7 @@ async function ejecutarSimulador(precioUSD, anticipo = 0) {
 }
 
 export default function SimulatorPage() {
-  const [precioUSD, setPrecioUSD] = useState("");
+  const [precioARS, setPrecioARS] = useState("");
   const [anticipo, setAnticipo] = useState("");
   const [resultado, setResultado] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -78,7 +64,7 @@ export default function SimulatorPage() {
     try {
       setLoading(true);
       setError("");
-      const data = await ejecutarSimulador(Number(precioUSD), Number(anticipo));
+      const data = await ejecutarSimulador(Number(precioARS), Number(anticipo));
       setResultado(data);
     } catch (err) {
       setError("Error al calcular la simulación. Verifica los valores ingresados.");
@@ -117,13 +103,13 @@ export default function SimulatorPage() {
         {/* Inputs */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
           <div>
-            <label className="block text-sm mb-2 text-gray-400">Precio del vehículo (USD)</label>
+            <label className="block text-sm mb-2 text-gray-400">Precio del vehículo (ARS)</label>
             <input
               type="number"
               className="w-full px-4 py-2 rounded-lg bg-gray-900 border border-gray-700 focus:ring-2 focus:ring-blue-500 outline-none"
-              value={precioUSD}
-              onChange={(e) => setPrecioUSD(e.target.value)}
-              placeholder="Ej: 9500"
+              value={precioARS}
+              onChange={(e) => setPrecioARS(e.target.value)}
+              placeholder="Ej: 15000000"
             />
           </div>
           <div>
@@ -141,7 +127,7 @@ export default function SimulatorPage() {
         {/* Botón principal */}
         <button
           onClick={handleSimular}
-          disabled={loading || !precioUSD}
+          disabled={loading || !precioARS}
           className="w-full py-3 rounded-lg bg-blue-600 hover:bg-blue-700 transition font-semibold text-lg disabled:opacity-60"
         >
           {loading ? "Calculando..." : "Simular financiación"}
@@ -158,10 +144,6 @@ export default function SimulatorPage() {
             <div className="bg-gray-900/60 p-6 rounded-xl border border-gray-700 space-y-2">
               <p>
                 <span className="font-medium text-gray-400">💵 Valor del vehículo:</span>{" "}
-                {resultado.precioUSD.toLocaleString("es-AR", { style: "currency", currency: "USD" })}
-              </p>
-              <p>
-                <span className="font-medium text-gray-400">💸 Cotización total en pesos:</span>{" "}
                 {resultado.precioARS.toLocaleString("es-AR", { style: "currency", currency: "ARS" })}
               </p>
               <p>

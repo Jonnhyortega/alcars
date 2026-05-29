@@ -8,6 +8,7 @@ import { enviarWhatsApp } from "@/app/utils/redireccionarAwhatsapp";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { ChevronLeft, MessageCircle } from "lucide-react";
+import { formateador } from "@/app/components/autoCard";
 
 export default function AutoPage({ params }) {
   // ✅ Desempaquetar correctamente los parámetros (Next.js 15+)
@@ -88,7 +89,7 @@ export default function AutoPage({ params }) {
                         auto.precio > 0 ? "text-foreground" : "text-muted-foreground"
                     }`}
                     >
-                    US$ {auto.precio || "Consultar"}
+                    {formateador.format(auto.precio)}
                     </p>
                 </div>
 

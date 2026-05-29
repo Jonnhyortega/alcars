@@ -6,6 +6,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
+export const formateador = new Intl.NumberFormat('es-AR', {
+  style: 'currency',
+  currency: 'ARS'
+});
+
 export default function AutoCard({ auto, index = 0 }) {
   const [currentImgIndex, setCurrentImgIndex] = useState(0);
   const isSold = !auto.disponible;
@@ -141,7 +146,7 @@ export default function AutoCard({ auto, index = 0 }) {
                 <div className="flex flex-col">
                      <span className="text-xs text-muted-foreground uppercase font-semibold">Precio</span>
                      <span className={`text-xl font-bold ${isSold ? 'text-muted-foreground line-through' : 'text-foreground'}`}>
-                        {isSold ? "Vendido" : `US$ ${auto.precio}`}
+                        {isSold ? "Vendido" : `$ ${formateador.format(auto.precio)}`}
                      </span>
                 </div>
                 
